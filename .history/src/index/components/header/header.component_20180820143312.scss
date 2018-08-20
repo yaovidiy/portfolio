@@ -44,6 +44,7 @@ $border-line: rgb(234, 229, 229);
     }
 }
 .menu { 
+    transition: all 0.1s;
     overflow: hidden;
     width: 100%;
     height: 0;
