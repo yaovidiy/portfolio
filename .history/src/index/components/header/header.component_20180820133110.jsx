@@ -1,0 +1,34 @@
+import * as React from 'react';
+
+import './header.component.scss';
+
+export class Header extends React.Component {
+    toogleBurger(){
+        const burger = document.querySelector('.header__menu-burger');
+        if (burger.className==='header__menu-burger'){
+            burger.className = 'header__menu-burger test';
+        }
+        else {
+        burger.className = 'header__menu-burger';
+        }
+    }
+    render(){
+        return <div className="header">
+            <div className="header__name">Ovdiy Yaroslav</div>
+            <div className="header__job">Trainee/Junior Fornt-end</div>
+            <div onClick={this.toogleBurger.bind(this)} className="header__menu-burger">
+            <div></div>
+            <div></div>
+            <div></div>
+            </div>
+            <div className="header__menu">
+            <ul className="menu">
+                <li className="menu__active">Главная</li>
+                <li>Мое резюме</li>
+                <li>Мои проекты</li>
+                <li>Контакты</li>
+            </ul>
+            </div>
+        </div>
+    }
+}

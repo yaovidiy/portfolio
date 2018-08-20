@@ -17,12 +17,13 @@ $border-line: rgb(234, 229, 229);
         font-weight: 400;
     }
     &__menu{
-        display: none;
+        display: flex;
+        display: flex;
         margin: 50px auto;
         align-items: center;
         justify-content: center;
         &-burger {
-            transition: all 0.5s;
+            transition: all 1s;
             padding: 14px 0;
             display: flex;
             align-items: center;
@@ -43,17 +44,17 @@ $border-line: rgb(234, 229, 229);
         }
     }
 }
-.menu { 
-    transition: all 0.5s;
-    overflow: hidden;
+.menu {
+    transition: all 1s;
+    display: none;
     width: 100%;
-    height: 0;
+    height: 100%;
     background-color: $text-color;
     color:$border-line;
     opacity: 0;
     list-style: none;
     list-style-position: inside;
-    margin: 0 0;
+    margin: 0;
     padding: 0;
     & li {
     border-bottom: 1px solid $border-line;
@@ -67,9 +68,7 @@ $border-line: rgb(234, 229, 229);
 }
 .active{
     &__menu{
-    transition: all 0.2s;
-    margin: 50px 0;
-    height: 100%;
+    transition: all 1s;
     display: block;
     opacity: 1;
     }
@@ -79,19 +78,15 @@ $border-line: rgb(234, 229, 229);
             display: none;
         }
         & div:first-child{
-            transition: all 0.5s;
+            transition: all 1s;
             position: absolute;
             transform: rotate(40deg);
         }
         & div:last-child{
-            transition: all 0.5s;
+            transition: all 1s;
             position: absolute;
             transform: rotate(-40deg);
         }
-    }
-    &__body {
-	    transition: all 0.5s;        
-        background-color: $text-color;
     }
     
 }

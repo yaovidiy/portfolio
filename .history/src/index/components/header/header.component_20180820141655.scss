@@ -67,7 +67,7 @@ $border-line: rgb(234, 229, 229);
 }
 .active{
     &__menu{
-    transition: all 0.2s;
+    transition: all 0.5s;
     margin: 50px 0;
     height: 100%;
     display: block;

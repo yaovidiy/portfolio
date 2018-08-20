@@ -53,7 +53,7 @@ $border-line: rgb(234, 229, 229);
     opacity: 0;
     list-style: none;
     list-style-position: inside;
-    margin: 0 0;
+    margin: 50px 0;
     padding: 0;
     & li {
     border-bottom: 1px solid $border-line;
@@ -67,8 +67,7 @@ $border-line: rgb(234, 229, 229);
 }
 .active{
     &__menu{
-    transition: all 0.2s;
-    margin: 50px 0;
+    transition: all 0.5s;
     height: 100%;
     display: block;
     opacity: 1;

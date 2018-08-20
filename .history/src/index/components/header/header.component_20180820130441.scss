@@ -17,19 +17,18 @@ $border-line: rgb(234, 229, 229);
         font-weight: 400;
     }
     &__menu{
-        display: none;
-        margin: 50px auto;
+        display: flex;
+        margin: 0 auto;
         align-items: center;
         justify-content: center;
         &-burger {
-            transition: all 0.5s;
             padding: 14px 0;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             flex-direction: column;
             width: 48px;
-            height: 20px;
+            height: 48px;
             background-color: $text-color;
             border-radius: 4px;
             position: absolute;
@@ -43,18 +42,10 @@ $border-line: rgb(234, 229, 229);
         }
     }
 }
-.menu { 
-    transition: all 0.5s;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    background-color: $text-color;
+.menu {
     color:$border-line;
     opacity: 0;
     list-style: none;
-    list-style-position: inside;
-    margin: 0 0;
-    padding: 0;
     & li {
     border-bottom: 1px solid $border-line;
     text-align: center;
@@ -64,34 +55,4 @@ $border-line: rgb(234, 229, 229);
     &__active {
     color:$active-color;
     }
-}
-.active{
-    &__menu{
-    transition: all 0.2s;
-    margin: 50px 0;
-    height: 100%;
-    display: block;
-    opacity: 1;
-    }
-    &__burger {
-        justify-content: center;
-        & div:nth-child(2){
-            display: none;
-        }
-        & div:first-child{
-            transition: all 0.5s;
-            position: absolute;
-            transform: rotate(40deg);
-        }
-        & div:last-child{
-            transition: all 0.5s;
-            position: absolute;
-            transform: rotate(-40deg);
-        }
-    }
-    &__body {
-	    transition: all 0.5s;        
-        background-color: $text-color;
-    }
-    
 }
