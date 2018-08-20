@@ -21,9 +21,6 @@ $text-color: rgb(77, 77, 77);
 .menu {
     list-style: none;
     & li {
-    border-bottom: 1px solid white;
-    text-align: center;
-    padding: 5px 0;
     cursor: pointer;
 }
 }

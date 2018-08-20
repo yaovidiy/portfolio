@@ -1,0 +1,13 @@
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(77, 77, 77);
+    font-weight: 600;
+    display: flex;
+    
+    &__name {
+        font-size: 30px;
+    }
+    &__job {
+        font-weight: 500;
+    }
+}

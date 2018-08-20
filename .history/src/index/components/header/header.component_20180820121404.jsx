@@ -12,14 +12,7 @@ export class Header extends React.Component {
                 <div></div>
                 <div></div>
             </div>
-            <div className="header__menu">
-            <ul className="menu">
-                <li>Главная</li>
-                <li>Мое резюме</li>
-                <li>Мои проекты</li>
-                <li>Контакты</li>
-            </ul>
-            </div>
+            <div className="header__menu"></div>
         </div>
     }
 }
