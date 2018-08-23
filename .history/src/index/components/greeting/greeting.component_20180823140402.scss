@@ -1,0 +1,33 @@
+$text-color: rgb(77, 77, 77);
+
+.greeting {
+    margin: 50px auto;
+    color: $text-color;
+    &__text{
+        font-size: 29px;
+    }
+    &__circlebox {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        &-circle {
+            text-align: center;
+            border-radius: 50%; 
+            align-content: center;
+            height: 80px;
+            width: 90px;
+            &:nth-child(1){
+                background-color: red;
+            }
+            &:nth-child(2){
+                background-color: green;
+            }
+            &:nth-child(3){
+                background-color: blue;
+            }
+        }
+    }
+}

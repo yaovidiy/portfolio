@@ -1,5 +1,4 @@
 $text-color: rgb(77, 77, 77);
-$transition-time: all 1s;
 
 .greeting {
     margin: 50px auto;
@@ -15,9 +14,6 @@ $transition-time: all 1s;
         justify-content: space-between;
         align-items: center;
         &-circle {
-            font-size: 13px;
-            color: white;
-            margin-top: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -26,28 +22,13 @@ $transition-time: all 1s;
             height: 80px;
             width: 90px;
             &:nth-child(1){
-                transition: $transition-time;
                 background-color: rgb(232, 53, 86);
-                &:hover{
-                    transition: $transition-time;
-                    background-color: rgb(155, 36, 57);
-                }
             }
             &:nth-child(2){
-                transition: $transition-time;
                 background-color: rgb(97, 208, 212);
-                &:hover{
-                    transition: $transition-time;
-                    background-color: rgb(65, 139, 141);
-                }
             }
             &:nth-child(3){
-                transition: $transition-time;
                 background-color: rgb(209, 201, 38);
-                &:hover{
-                    transition: $transition-time;
-                    background-color: rgb(139, 134, 25);
-                }
             }
         }
     }

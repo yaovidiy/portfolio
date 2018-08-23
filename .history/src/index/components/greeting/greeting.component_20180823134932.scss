@@ -1,0 +1,9 @@
+$text-color: rgb(77, 77, 77);
+
+.greeting {
+    margin: 50px auto;
+    color: $text-color;
+    &__text{
+        font-size: 29px;
+    }
+}

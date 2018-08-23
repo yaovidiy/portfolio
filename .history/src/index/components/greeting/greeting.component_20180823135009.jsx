@@ -10,15 +10,9 @@ export class Greeting extends React.Component {
                     <b>Здравствуйте</b>, вот немного информации обо мне:
                 </div>
                 <div className="greeting__circlebox">
-                    <div className="greeting__circlebox-circle">
-                    <div>Мое резюме</div> 
-                    </div>
-                    <div className="greeting__circlebox-circle">
-                    <div>Мои работы</div> 
-                    </div>
-                    <div className="greeting__circlebox-circle">
-                    <div>Мои навыки</div> 
-                    </div>
+                    <div className="greeting__circlebox-resume">Мое резюме</div>
+                    <div className="greeting__circlebox-work">Мои работы</div>
+                    <div className="greeting__circlebox-skills">Мои навыки</div>
                 </div>
             </div>
         </section>
